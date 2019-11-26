@@ -5,8 +5,24 @@
     }
 }
 
+.typeList {
+    width: 120px;
+    .item {
+        border: 1px solid #000;
+    }
+    .active {
+        border: 1px solid #f00;
+    }
+}
 .sectionHeader {
     margin: 16px 0 8px 0;
+}
+.conditionList {
+    .item {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #000;
+    }
 }
 
 
@@ -29,6 +45,7 @@
     font-weight: bold;
     margin: 16px 0 8px 0;;
 }
+
 .table {
     td,
     th {

@@ -79,7 +79,7 @@ export default function Page(props) {
             <div className="ui-page-side-content">
                 <div className="side-header">
                     {/* {windowWidth} */}
-                    <img className="logo" src="https://table.yunser.com/static/img/table.svg" />
+                    <img className="logo" src="https://edu.yunser.com/static/img/math.svg" />
                 </div>
                 <List className="list" component="nav">
                     <ListItem button component={Link} to="/">
@@ -88,7 +88,7 @@ export default function Page(props) {
                         </ListItemIcon>
                         <ListItemText primary="首页" />
                     </ListItem>
-                    <ListItem button component="a" href="https://project.yunser.com/products/658b1df00af611eabc296de5049144d6" target="_blank">
+                    <ListItem button component="a" href="https://project.yunser.com/products/8a9e24f00df511ea901ee7e49215c09c" target="_blank">
                         <ListItemIcon>
                             <InfoIcon />
                         </ListItemIcon>
