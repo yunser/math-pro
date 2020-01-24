@@ -23,7 +23,7 @@ import './index.css'
 
 export default function Page(props) {
     console.log('props', props)
-    const { title = '', menu = [] } = props
+    const { title = '', menu = [], noSide = false } = props
     // const { asd } = this.state
     // console.log('page this.state', this.state)
     let [ open, setOpen ] = React.useState(window.innerWidth >= 800)
@@ -31,6 +31,9 @@ export default function Page(props) {
     if (window.location.search.includes('embed=true')) {
         open = false
         headerVisible = false
+    }
+    if (noSide) {
+        open = false
     }
     const [ drawerType, setDrawerType ] = React.useState(window.innerWidth >= 800 ? 'inner' : 'mask')
     const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -87,6 +90,12 @@ export default function Page(props) {
                             <HomeIcon />
                         </ListItemIcon>
                         <ListItemText primary="首页" />
+                    </ListItem>
+                    <ListItem button component={Link} to="/graph">
+                        <ListItemIcon>
+                            <HomeIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="图形" />
                     </ListItem>
                     <ListItem button component="a" href="https://project.yunser.com/products/8a9e24f00df511ea901ee7e49215c09c" target="_blank">
                         <ListItemIcon>

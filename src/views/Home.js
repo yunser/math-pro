@@ -114,8 +114,8 @@ This is Cat`,
         },
 
         distanceForm: {
-            first: 'A',
-            second: 'B',
+            first: 'B',
+            second: 'C',
         }
     }
 
