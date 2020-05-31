@@ -91,12 +91,12 @@ export default function Page(props) {
                         </ListItemIcon>
                         <ListItemText primary="首页" />
                     </ListItem>
-                    <ListItem button component={Link} to="/graph">
+                    {/* <ListItem button component={Link} to="/graph">
                         <ListItemIcon>
                             <HomeIcon />
                         </ListItemIcon>
                         <ListItemText primary="图形" />
-                    </ListItem>
+                    </ListItem> */}
                     <ListItem button component="a" href="https://project.yunser.com/products/8a9e24f00df511ea901ee7e49215c09c" target="_blank">
                         <ListItemIcon>
                             <InfoIcon />
